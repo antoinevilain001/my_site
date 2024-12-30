@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block register_js %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to FlaskApp</h1>
+    <p>This is the home page content. Use this template to display anything you like.</p>
+
+    <!-- Home Section -->
+
+    <section id="home">
+        <h1>Hi!</h1>
+    </section>
+    
+{% endblock %}
