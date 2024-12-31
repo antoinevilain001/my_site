@@ -1,0 +1,16 @@
+{% extends "games.html" %}
+
+{% block register_js %}
+    <script src="{{ url_for('static', filename='js/snake.js') }}"></script>
+{% endblock %}
+
+{% block game %}
+    <h1>Snake</h1>
+
+    <section id="snake">
+        <div id = "pause_box"></div>
+        <div id = "score_box"></div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </section>
+    
+{% endblock %}
